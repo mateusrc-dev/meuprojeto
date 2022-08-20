@@ -1,0 +1,59 @@
+h1 { /*tem mais especificidade*/
+  font-family: 'Inter', sans-serif;
+  font-size: 49px; /*essas propriedades foram copiadas do projeto no figma - tamanho da fonte em pixel*/
+  line-height: 56px; /*altura da linha*/
+  font-weight: normal;/*por padrão o h1 vem em negrito, esse comando é pra tirar o negrito - no projeto figma a configuração é essa*/
+  margin-bottom: 32px; /*colocando margem entre os elementos, o valor foi consultado no projeto figma*/
+}
+
+h1 span { /*aqui não se utiliza vírgula porque se não ocorre erro, pois estamos dentro do h1 selecionando especificamente o span*/
+  font-weight: bold; /*no projeto do figma, a palavra alaranjada está em negrito*/
+}
+
+#hero {
+  width: 592px; /*ao diminuir a largura, os elementos vão continuar centralizados devido o text-align, mas no canto, justamente porque a largura do bloco (container) foi diminuída*/
+  margin: auto; /*colocando a margem auto, podemos colocar novamente o bloco de elementos centralizados no centro, pois auto tenta distribuir o espaço de forma igual*/
+  /*outra forma de colocar margin seria: margin: 0, auto, 72px; */
+  margin-bottom: 72px; /*colocando margem entre os elementos, o valor foi consultado no projeto figma*/
+}
+
+#hero img {
+  margin-bottom: 72px; /*colocando margem entre os elementos, o valor foi consultado no projeto figma*/
+}
+
+body {
+  margin: 0; /*o margin por padrão tem 8px*/
+  font-family: 'Roboto', sans-serif;
+  text-align: center; /*alinhar o texto ao meio*/
+}
+
+span, a { /*tem mais especificidade*/
+  color: #FF9900; /*cores copiadas do projeto no figma*/
+}
+
+p, #footer {
+  color: #7D7987;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+#footer {
+  margin-bottom: 15px;
+}
+
+#footer a + a { /*com esse comando estamos pegando o segundo 'a', pegando um 'a' que tem um 'a' anterior a ele*/
+  margin-left: 28px; /*com esse comando está sendo aplicado uma margem ao lado esquerdo do segundo 'a'*/
+}
+
+#footer .line {
+  width: 568px;
+  height: 0px;
+  border: 1px solid #ECEFF2;
+  margin: 0 auto 8px; /*0 em cima, auto nas laterais, e 8px em baixo*/
+}
+
+#balls {
+  position: fixed; /*ao usar essa propriedade o elemento fica fixado na tela (fica no mesmo lugar se a tela rolar) e são habilitadas novas propriedades, como top, left, bottom...*/
+  bottom: 0px;
+  right: 0px 
+}
